@@ -38,7 +38,8 @@ class AUTOMOBILE(models.Model):
     WHEEL = models.CharField(max_length=45)
     ENGINE_POWER = models.IntegerField()
     CAPACITY = models.FloatField()
-
+    def __str__(self):
+        return self.MODEL
 
 class ADD_EQUIP(models.Model):
     ID_AE = models.IntegerField()
