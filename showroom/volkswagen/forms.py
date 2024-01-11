@@ -12,7 +12,7 @@ class сlients1Form(ModelForm):
             }),
             'num': NumberInput(attrs={
                 'class': 'NUMBER',
-                'placeholder': 'Номер телефона в формате 7XXXXXXXXXX'
+                'placeholder': 'Номер телефона в формате'
             }),
             'model': TextInput(attrs={
                 'class': 'MODEL',

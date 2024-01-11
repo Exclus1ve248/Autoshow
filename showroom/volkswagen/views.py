@@ -2,7 +2,7 @@ from django.shortcuts import render, redirect
 from .models import AUTOMOBILE, ORGANIZATION, ADD_EQUIP, ADD_SERV, clients1
 from .forms import сlients1Form
 from django.http import HttpResponse, HttpResponseNotFound
-# Create your views here.
+
 
 
 # request, 'main/index.html', {'auto':auto}
