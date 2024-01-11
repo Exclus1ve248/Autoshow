@@ -1,0 +1,13 @@
+{% load static %}
+{% include 'includes/nav.html' %}
+
+<div>
+    <a href="/automobile/add_eq">Доп. оборудование</a>
+    <a href="/automobile/add_serv">Доп. сервисы</a>
+</div>
+
+<div>
+    {% for el in add_eq %}
+    {{ el.NAME_AE }}
+    {% endfor %}
+</div>

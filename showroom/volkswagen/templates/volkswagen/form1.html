@@ -1,0 +1,37 @@
+{% load static %}
+{% include 'includes/nav.html' %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="{% static 'volkswagen/css/form.css' %}">
+</head>
+<body>
+    <form method="post" >
+         {%  csrf_token %}
+        <div class="form">
+            <div class="cont">
+                <div class="teext">Заказ</div>
+                <div class="inp">
+                     {{ form.name }}
+                </div>
+                <div class="inp">
+                     {{ form.num }}
+                </div>
+                <div class="inp">
+                     {{ form.model }}
+                </div>
+                <div class="inp">
+                    <button type="submit">Отправить заявку</button>
+                </div>
+                
+                 <span class="err">{{ error }}</span>
+            </div>
+        </div>
+        
+    </form>
+    
+</body>
+</html>

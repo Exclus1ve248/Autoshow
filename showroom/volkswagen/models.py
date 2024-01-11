@@ -7,12 +7,15 @@ class ORGANIZATION(models.Model):
     PH_NUM = models.CharField(max_length=15)
     ADDRESS = models.CharField(max_length=45)
     ORGANIZATION_ID = models.IntegerField()
-
+    def __str__(self):
+        return self.NAME_ORG
 
 class EMPLOYEES(models.Model):
     EMPLOYEE_ID = models.IntegerField()
     JOB_TITLE_ID = models.IntegerField()
     FIO_EMPL = models.CharField(max_length=45)
+    def __str__(self):
+        return self.FIO_EMPL
 
 
 class JOB_TITLE(models.Model):
@@ -44,11 +47,15 @@ class AUTOMOBILE(models.Model):
 class ADD_EQUIP(models.Model):
     ID_AE = models.IntegerField()
     NAME_AE = models.CharField(max_length=45)
+    def __str__(self):
+        return self.NAME_AE
 
 
 class ADD_SERV(models.Model):
     ID_AS = models.IntegerField()
     NAME_AS = models.CharField(max_length=45)
+    def __str__(self):
+        return self.NAME_AS
 
 
 class CHECK(models.Model):
@@ -66,3 +73,8 @@ class AGREEMENT(models.Model):
     DATE = models.DateTimeField()
     ID_COST = models.IntegerField()
     ORGANIZATION_ID = models.IntegerField()
+
+class clients1(models.Model):
+    name = models.CharField(max_length=60)
+    num = models.IntegerField()
+    model = models.CharField(max_length=45)

@@ -1,0 +1,62 @@
+{% load static %}
+{% include 'includes/nav.html' %}
+<!--<div>-->
+<!--    {{org}}-->
+<!--</div>-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="{% static 'volkswagen/css/org1.css' %}">
+</head>
+<body>
+    <div class="container">
+        <div class="col-6">
+            <div class="title">
+                {{org1}}
+            </div>
+            <div class="img">
+                <img src="{% static 'volkswagen/media/org1.jpg' %}" alt="">
+            </div>
+            <a class="url" href="https://bryansk-vw.ru/">Сайт</a>
+        
+            <div class="container2">
+                <div class="fio col-3">
+                    {{org1.FIO_LEAD}}
+                </div>
+                <div class="number">
+                    {{org1.PH_NUM}}
+                    <div class="address">
+                    {{org1.ADDRESS}}
+                    </div>
+                </div>
+            </div>
+        </div> 
+            
+        <div class="col-6">
+            <div class="title">
+                {{org2}}
+            </div>
+            <div class="img">
+                <img src="{% static 'volkswagen/media/org2.jpg' %}" alt="">
+            </div>
+            <a class="url" href="https://vw-kaluga.ru/">Сайт</a>
+
+            <div class="container2">
+                <div class="fio col-3">
+                    {{org2.FIO_LEAD}}
+                </div>
+                <div class="number">
+                    {{org2.PH_NUM}}
+                    <div class="address">
+                    {{org2.ADDRESS}}
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,20 +1,32 @@
-<!--{% extends 'base.html' %}-->
-<!--{% block content %}-->
-<!--<div>-->
-<!--    <b>{{menu.1.url}}</b>-->
-<!--    <h1>Volkswagen</h1>-->
-<!--    <a href="">Главная</a>-->
-<!--    <a href="organization">Организации</a>-->
-<!--    <a href="automobile">Автомобили</a>-->
-<!--    <a href="employee">Сотрудники</a>-->
-<!--    <a href="automobile/add_eq">Доп. оборудование</a>-->
-<!--    <a href="automobile/add_serv">Доп. сервисы</a>-->
-<!--</div>-->
-<!--{% endblock %}-->
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+ <!DOCTYPE html>
+ <html lang="en">
+ <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/index_nav1.css">
+ </head>
+ <body>
+    <div class="container3">
+        <div class="top-text">
+            Автосалоны Volkswagen
+        </div>
+        <div class="text-nav">
+            <a class="url1" href="/">Главная</a>
+            <a class="url1" href="/organization">Организации</a>
+            <a class="url1" href="/automobile">Автомобили</a>
+            <a class="url1" href="/about">О нас</a>
+        </div>
+    </div>
+    <div class="q">
 
-<nav>
-    <a href="https://ya.ru"> Поиск</a>
-    <a href="http://www.bgitu.ru/"> ВУЗ</a>
-    <hr>
-    <b> {{menu.1.url}} </b>
-</nav>
+    </div>
+ </body>
+ </html>
+{% endblock %}
+
+
+

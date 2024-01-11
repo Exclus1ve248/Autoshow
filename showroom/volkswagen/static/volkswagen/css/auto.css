@@ -1,0 +1,30 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+.container4 {
+    margin: 20px;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content:space-around;
+}
+.col-4 {
+    width: 30%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.img-auto {
+    width:100%;
+    height: 100%;
+}
+
+.img-auto img {
+    width:100%;
+    height: 100%;
+}

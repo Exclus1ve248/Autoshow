@@ -1,0 +1,119 @@
+{% load static %}
+{% include 'includes/nav.html' %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="{% static 'volkswagen/css/auto.css' %}">
+</head>
+<body>
+    <div class="container4">
+        <div class="col-4">
+            <div class="img-auto">
+                <img src="{% static 'volkswagen/media/golf.jpg' %}" alt="">
+            </div>
+            <div>
+                {{auto1.MODEL}}
+            </div>
+            <div>
+                {{auto1.GENERATION}}
+            </div>
+            <div>
+                {{auto1.GEAR_BOX}}
+            </div>
+            <div>
+                {{auto1.DRIVE}}
+            </div>
+            <div>
+                {{auto1.BODY}}
+            </div>
+            <div>
+                {{auto1.WHEEL}}
+            </div>
+            <div>
+                Мощность {{auto1.ENGINE_POWER}}
+            </div>
+            <div>
+                Объем двигателя {{auto1.CAPACITY}}
+            </div>
+            <a href="{% url 'form1' %}">
+                <button>
+                    Оформить
+                </button>
+            </a>
+        </div>
+        <div class="col-4">
+            <div class="img-auto">
+                <img src="{% static 'volkswagen/media/passat.jpg' %}" alt="">
+            </div>
+            <div>
+                {{auto2.MODEL}}
+            </div>
+            <div>
+                {{auto2.GENERATION}}
+            </div>
+            <div>
+                {{auto2.GEAR_BOX}}
+            </div>
+            <div>
+                {{auto2.DRIVE}}
+            </div>
+            <div>
+                {{auto2.BODY}}
+            </div>
+            <div>
+                {{auto2.WHEEL}}
+            </div>
+            <div>
+                Мощность {{auto2.ENGINE_POWER}}
+            </div>
+            <div>
+                Объем двигателя {{auto2.CAPACITY}}
+            </div>
+            <a href="{% url 'form1' %}">
+                <button>
+                    Оформить
+                </button>
+            </a>
+        </div>
+        <div class="col-4">
+            <div class="img-auto">
+                <img src="{% static 'volkswagen/media/transporter.jpg' %}" alt="">
+
+            </div>
+            <div>
+                {{auto3.MODEL}}
+            </div>
+            <div>
+                {{auto3.GENERATION}}
+            </div>
+            <div>
+                {{auto3.GEAR_BOX}}
+            </div>
+            <div>
+                {{auto3.DRIVE}}
+            </div>
+            <div>
+                {{auto3.BODY}}
+            </div>
+            <div>
+                {{auto3.WHEEL}}
+            </div>
+            <div>
+                Мощность {{auto3.ENGINE_POWER}}
+            </div>
+            <div>
+                Объем двигателя {{auto3.CAPACITY}}
+            </div>
+            <a href="{% url 'form1' %}">
+                <button>
+                    Оформить
+                </button>
+            </a>
+        </div>
+    </div>
+</body>
+</html>
